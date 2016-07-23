@@ -60,17 +60,13 @@ view model =
   , input [ type' "password", placeholder "Password", onInput Password ] []
   , input [ type' "password", placeholder "Re-enter Password", onInput PasswordAgain ] []
   , input [ type' "number", placeholder "Age", onInput Age ] []
-  , button [ type' "submit" ] [ text "Submit" ]
   , passwordLengthValidation model
   , passwordMatchValidation model
   , passwordContainsNumbersValidation model
   , passwordContainsLowerCaseValidation model
   , passwordContainsUpperCaseValidation model
   , ageIsNumberValidation model
-  --, validateAll
   ]
-
-
 
 
 passwordLengthValidation : Model -> Html Msg
