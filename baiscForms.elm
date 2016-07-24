@@ -1,4 +1,3 @@
--- TODO: learn regex in elm and finish the extra credit in the exercise
 
 import Html exposing (..)
 import Html.App as Html
